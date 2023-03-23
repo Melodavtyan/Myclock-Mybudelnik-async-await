@@ -16,7 +16,8 @@ class Clock {
     }
 
     async tick() {
-        for (let i = 0; i < 60; i++) {
+        while (true) {
+            
             await this.delay(1000)
             this.sec += 1
             if (this.sec === 60) {
